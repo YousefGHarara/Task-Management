@@ -1,0 +1,28 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+.area {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    "aside nav nav"
+    "aside content content"
+    "aside content content";
+    background-color: #202020;
+    width: 100%;
+    min-height: 500vh;
+    color: #fff;
+    position: relative;
+  }
+  
+  .content-area {
+    grid-area: content;
+    padding: 1em;
+    /* position: relative;  */
+}

@@ -1,0 +1,56 @@
+.wrapper {
+  background-color: rgba(0, 0, 0, .7);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.model {
+  width: 450px;
+  border-radius: 10px;
+  border: 1px solid #616161;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #212121  ;
+}
+
+.model .model-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model-top p {
+  cursor: pointer;
+}
+
+.model :is(input, textarea) {
+  border-radius: 4px;
+  border: 1px solid #616161;
+  background-color: #333;
+  padding: 5px 1em;
+  color: #fff;
+}
+
+.model textarea {
+  resize: vertical;
+}
+
+.model button {
+  width: fit-content;
+  margin-top: 30px;
+  padding: .3em 1em;
+  border-radius: 5px;
+  background-color: #f67b0f;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}

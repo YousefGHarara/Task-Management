@@ -1,0 +1,86 @@
+
+.tasks .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.tasks .content h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tasks .card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 3.2px #363636;
+  border-radius: 5px;
+  border-style: dashed;
+  padding: 1em;
+  align-items: center;
+
+}
+
+.tasks .card {
+  width: min(350px, 90%);
+  padding: 1em;
+  background-color: #292929;
+  border: 1px solid #444;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+.tasks .card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasks .card-top p {
+  padding: .1em .7em;
+  background-color: #FD0A54;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.tasks .card .card-description {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+
+.tasks .card-bottom {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasks .card-bottom button {
+  padding: .3em .5em;
+  border: 1px solid #171717;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-bottom .btn-complete {
+  background-color: #0bcd99;
+  font-weight: 500;
+}
+
+.card-bottom .btn-finish {
+  background-color: #414141;
+
+}
+
+.tasks .drag-content {
+  padding: 1em;
+  border: 3.2px dashed #333;
+  width: 100%;
+}
